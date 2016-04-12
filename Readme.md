@@ -1,7 +1,7 @@
-# Личный проект «Глейси»
+﻿# Личный проект «Глейси»
 
 * Студент: [Denis Sotnikov](https://up.htmlacademy.ru/htmlcss/13/user/99369).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Смирнов](https://htmlacademy.ru/profile/id71777)
 
 ---
 
