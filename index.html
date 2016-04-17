@@ -1,12 +1,209 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gllacy</title>
+</head>
+<body>
+              <!--Хидер-->
+  <header class="main-header">
+    <div class="container">
+      <div class="gllacy-logo">
+        <img src="http://placehold.it/150x100" width="155" height="70" alt="Здесь лого сайта" />
+      </div>
+    </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+     <div class="main-navigation">
+       <ul class="main-navigation-list">
+         <li class="main-navigation-item">
+           <a href="#">Каталог</a>
+         </li>
+         <li class="main-navigation-item">
+           <a href="#">Доставка и оплата</a>
+         </li>
+         <li class="main-navigation-item">
+           <a href="#">О компании</a>
+         </li>
+       </ul>
 
-  </body>
+       <div class="search-icon">
+         <img src="http://placehold.it/150x100" width="35" height="35" alt="Здесь иконка поиска" />
+       </div>
+
+       <div class="user-block">
+         <a href="#" class="login"></a>
+       </div>
+
+       <div class="basket">
+         <img src="http://placehold.it/150x100" width="35" height="35" alt="Здесь иконка корзины" />
+         Пусто
+       </div>
+     </div>
+  </header>
+              <!--Основной контент-->
+  <main class="container">
+    <!--Не знаю, как правильно разметить этот блок с временем работы-->
+    <div class="work-time">
+      <ul>
+        <li>С 10 до 20, ежедневно</li>
+        <li>8 812 450-25-25</li>
+      </ul>
+    </div>
+    <!--Далее слайдер. Я сделал как-то так-->
+    <div class="slider">
+
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+
+      <div class="slider-controls">
+
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+
+      </div>
+      <div class="slider-inner">
+        <div class="slider-slides">
+          <img src="http://placehold.it/150x100" width="700" height="550" alt="Здесь 1 слайд">
+          <img src="http://placehold.it/150x100" width="700" height="550" alt="Здесь 2 слайд">
+        </div>
+      </div>
+    </div>
+
+    <button class="btn" type="submit" name="button">Давайте оба!</button>
+
+    <section class="features">
+      <div class="feature-item">
+         <b class="features-name">Малинка даром!</b>
+         <p>
+           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+         </p>
+          <button class="btn" type="submit" name="button">Хочу варенье!</button>
+      </div>
+
+      <div class="feature-item">
+         <b class="features-name">Шоколадки даром!</b>
+         <p>
+           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.
+         </p>
+          <button class="btn" type="submit" name="button">Хочу шоколадки!</button>
+      </div>
+    </section>
+
+    <article class="best">
+      <div class="best-img best-img-item">
+        <img src="http://placehold.it/150x100" width="210" height="210" alt="Здесь картинка мороженого" />
+        <p>
+          Сливочное с апельсиновым джемом и цитрусовой стружкой
+        </p>
+      </div>
+
+      <div class="best-img best-img-item">
+        <img src="http://placehold.it/150x100" width="210" height="210" alt="Здесь картинка мороженого" />
+        <p>
+          Сливочно-кофейное с кусочками шоколада
+        </p>
+      </div>
+
+      <div class="best-img best-img-item">
+        <img src="http://placehold.it/150x100" width="210" height="210" alt="Здесь картинка мороженого" />
+        <p>
+          Сливочно-клубничное с присыпкой из белого шоколада
+        </p>
+      </div>
+
+      <div class="best-img best-img-item">
+        <img src="http://placehold.it/150x100" width="210" height="210" alt="Здесь картинка мороженого" />
+        <p>
+          Сливочное крем-брюле с карамельной подливкой
+        </p>
+      </div>
+    </article>
+
+    <section class="content-inner">
+      <h2 class="content-inner-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+      <div class="content-inner-left">
+        <p>
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+        </p>
+        <p>
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+        </p>
+      </div>
+
+      <div class="content-inner-right">
+        <p>
+          Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+        </p>
+
+        <p>
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
+        </p>
+      </div>
+    </section>
+
+    <article class="news">
+      <span>Новое в нашем блоге</span>
+      <p>
+        <b>10  способов сервировки фруктовых щербетов к столу</b>
+      </p>
+    </article>
+
+    <div class="email">
+      <p>
+        Подпишитесь на нашу сладкую рассылку
+и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+      </p>
+      <form class="email-form" action="index.html" method="post">
+        <input type="text" name="text" value="">
+        <input class="btn btn-email" type="button" name="name" value="Отправить">
+      </form>
+
+    </div>
+
+    <div class="navigation">
+      <div class="map">
+        <div class="map-marker">
+          <img src="http://placehold.it/150x100" width="80" height="140" alt="Здесь маркер мороженого">
+        </div>
+
+        <div class="address">
+          <span>Адрес главного офиса и офлайн магазина:</span> <br>
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b> <br>
+
+          <span>Для заказов по телефону:</span>
+          <b>8 812 450-25-25</b>
+          <span>(с 10 до 20 ежедневно)</span>
+
+          <button class="btn btn-feedback" type="submit" name="button">Форма обратной связи</button>
+        </div>
+
+      </div>
+     </div>
+  </main>
+
+                                    <!--Футер-->
+
+<footer class="main-footer">
+  <section class="footer-social">
+    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+  </section>
+
+   <section class="another-info">
+     <ul>
+       <li><a href="#">Для поставщиков</a></li>
+       <li><a href="#">О произвостве</a></li>
+       <li><a href="#">Наши документы</a></li>
+       <li><a href="#">Экологические стандарты</a></li>
+     </ul>
+   </section>
+
+   <section class="footer-copyright">
+
+    </section>
+</footer>
+
+</body>
 </html>
