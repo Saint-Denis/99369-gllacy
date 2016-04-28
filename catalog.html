@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gllacy-catalog</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/catalog.css" rel="stylesheet">
 </head>
 <body>
@@ -48,41 +49,52 @@
             <li><a href="#">Каталог</a></li>
             <li class="active"><a href="#">Сливочное</a></li>
         </ul>
+        <div class="page-title">
+            <h1>Сливочное мороженое</h1>
+        </div>
 
-        <form action="#" method="post">
-            <div class="form-title">
-                Сливочное мороженое
-            </div>
+        <div class="filters">
+            <form action="#" method="post">
+                <div class="form-top">
+                    <div class="select">
+                        <label for="select">Сортировка:</label> <br/>
+                        <select id="select">
+                            <option value="popular">по полулярности</option>
+                            <option value="price">по цене</option>
+                            <option value="ingredients">по ингредиентам</option>
+                        </select>
+                    </div>
+                    <div class="range">
+                        <label for="range">Цена: 100 руб. – 500 руб.</label> <br/>
+                        <input type="range" name="range" id="range" min="100" max="500">
+                    </div>
+                    <div class="radio">
+                        <label for="radio">Жирность</label> <br/>
+                        <input type="radio" id="radio" value="fatness"> 0%
+                        <input type="radio" id="radio" value="fatness" checked> 10%
+                        <input type="radio" id="radio" value="fatness"> до 30%
+                        <input type="radio" id="radio" value="fatness"> выше 30%
+                    </div>
+                </div>
 
-            <label for="select">Сортировка:</label> <br/>
-            <select id="select">
-                <option value="popular">по полулярности</option>
-                <option value="price">по цене</option>
-                <option value="ingredients">по ингредиентам</option>
-            </select>
+                <div class="form-bottom">
+                    <div class="checkbox">
+                        <label for="check">Наполнители:</label> <br/>
+                        <input type="checkbox" id="check" checked> шоколадные
+                        <input type="checkbox" id="check" checked> сахарные присыпки
+                        <input type="checkbox" id="check"> фрукты
+                        <input type="checkbox" id="check"> сиропы
+                        <input type="checkbox" id="check"> джемы
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-new" name="button">Применить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-            <label for="range">Цена: 100 руб. – 500 руб.</label> <br/>
-            <input type="range" name="range" id="range" min="100" max="500">
-
-            <label for="radio">Жирность</label> <br/>
-            <input type="radio" id="radio" value="fatness"> 0%
-            <input type="radio" id="radio" value="fatness" checked> 10%
-            <input type="radio" id="radio" value="fatness"> до 30%
-            <input type="radio" id="radio" value="fatness"> выше 30%
-
-            <label for="check">Наполнители:</label> <br/>
-            <input type="checkbox" id="check" checked> шоколадные
-            <input type="checkbox" id="check" checked> сахарные присыпки
-            <input type="checkbox" id="check"> фрукты
-            <input type="checkbox" id="check"> сиропы
-            <input type="checkbox" id="check"> джемы
-
-            <button type="submit" class="btn btn-new" name="button">Применить</button>
-
-        </form>
-
-        <article class="products">
-            <div class="products-item">
+        <section class="products">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/orange-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -92,9 +104,9 @@
                         <a href="#" class="product-title-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/coffee-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -104,9 +116,9 @@
                         <a href="#" class="product-title-link">Сливочно-кофейное с кусочками шоколада</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/strawberry-сream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -116,9 +128,9 @@
                         <a href="#" class="product-title-link">Сливочное крем-брюле с карамельной подливкой</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/caramel-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -128,9 +140,9 @@
                         <a href="#" class="product-title-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/jam-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -140,9 +152,9 @@
                         <a href="#" class="product-title-link">Сливочное с брусничным джемом</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/bilberry-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -152,9 +164,9 @@
                         <a href="#" class="product-title-link">Сливочно-черничное с цельными ягодами черники</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/lemon-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -164,9 +176,9 @@
                         <a href="#" class="product-title-link">Сливочно-лимонное с карамельной присыпкой</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/chocolate-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -176,9 +188,9 @@
                         <a href="#" class="product-title-link">Сливочное с шоколадной стружкой</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/vanilla-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -188,9 +200,9 @@
                         <a href="#" class="product-title-link">Сливочно-ванильное с кусочками шоколада</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/mentol-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -200,9 +212,9 @@
                         <a href="#" class="product-title-link">Сливочноe с ментоловым сиропом</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/creamy-chock-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -212,9 +224,9 @@
                         <a href="#" class="product-title-link">Сливочное с кусочками черного шоколада</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="products-item">
+            <artcile class="products-item">
                 <div class="product-img">
                     <a href="#" class="product-link"><img class="logo-img" src="img/syrup-cream.jpg" width="200" height="200" alt="Картинка товара"></a>
                     <div class="product-price">
@@ -224,15 +236,17 @@
                         <a href="#" class="product-title-link">Сливочное с мятным сиропом</a>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
 
         <div class="paginator">
+            <span class="arrow-ago"></span>
             <a href="#" class="active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
+            <div class="arrow-next"></div>
         </div>
     </main>
 
@@ -254,7 +268,9 @@
              </ul>
            </section>
 
-           <section class="footer-copyright"></section>
+           <section class="footer-copyright">
+               Сделано в HTML Academy &copy; 2016
+           </section>
       </div>
 </footer>
 
