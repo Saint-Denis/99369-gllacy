@@ -144,7 +144,9 @@ a {
 /*End Sprite*/
 
 
-/*Header*/
+/*==============================
+=            Header            =
+==============================*/
 
 .header-top {
     min-height: 75px;
@@ -293,10 +295,12 @@ a {
 }
 
 
-/*End of Header*/
+/*=====  End of Header  ======*/
 
 
-/*Content*/
+/*===============================
+=            Content            =
+===============================*/
 
 .breadcrumbs {
     float: left;
@@ -325,8 +329,8 @@ a {
     margin-right: 5px;
 }
 
-.breadcrumbs li:before:first-child {
-    content: none;
+.breadcrumbs li:first-child:before {
+    display: none;
 }
 
 .page-title h1 {
@@ -702,16 +706,16 @@ ul.pagination li a.active {
 
 .paginator .next {
     text-indent: -10000px;
-    background-image: url("../img/next-arrow.png");
-    background-repeat: no-repeat;
-    background-position: 0 center;
+    background: url("../img/next-arrow.png") no-repeat 0 center;
 }
 
 
-/*End of Content*/
+/*=====  End of Content  ======*/
 
 
-/*Footer*/
+/*==============================
+=            Footer            =
+==============================*/
 
 .footer-social {
     min-height: 45px;
@@ -798,3 +802,6 @@ ul.pagination li a.active {
     max-width: 255px;
     float: right;
 }
+
+
+/*=====  End of Footer  ======*/
