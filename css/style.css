@@ -437,13 +437,13 @@
         overflow: hidden;
     }
     
-    .money-icon {
+    .product-icon {
         position: absolute;
-        top: 12px;
-        left: 80px;
-        width: 35px;
-        height: 40px;
-        background: url("../img/rubl-icon.png") no-repeat 0 0;
+        bottom: 76px;
+        left: 83px;
+        width: 27px;
+        height: 32px;
+        background: url("../img/rubl-icon.svg") no-repeat 0 0;
     }
     
     .weight {
@@ -462,18 +462,20 @@
         background-image: url("../img/seo-bg.png");
     }
     
-    .features-box-about {
+    .features-box-left {
+        position: relative;
         float: left;
         width: 517px;
         margin-right: 25px;
     }
     
-    .features-box-production {
+    .features-box-right {
+        position: relative;
         float: left;
         width: 525px;
     }
     
-    .features-item {
+    .feature-item {
         padding-left: 55px;
         padding-bottom: 30px;
         color: #323232;
@@ -482,20 +484,45 @@
         font-weight: 400;
     }
     
-    .features-item-ice {
-        background: url("../img/ice-cream-icon.svg") no-repeat 0 top;
+    .ice-cream-icon {
+        position: absolute;
+        top: -11px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/ice-cream-icon.svg");
+        background-repeat: no-repeat;
     }
     
-    .features-item-leaf {
-        background: url("../img/leaf-icon.svg") no-repeat 0 top;
+    .leaf-icon {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/leaf-icon.svg");
+        background-repeat: no-repeat;
     }
     
-    .features-item-cow {
-        background: url("../img/cow-icon.svg") no-repeat 0 top;
+    .cow-icon {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        ;
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/cow-icon.svg");
+        background-repeat: no-repeat;
     }
     
-    .features-item-therm {
-        background: url("../img/therm-icon.svg") no-repeat 0 top;
+    .therm-icon {
+        position: absolute;
+        top: 83px;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/therm-icon.svg");
+        background-repeat: no-repeat;
     }
     
     .features-title {
