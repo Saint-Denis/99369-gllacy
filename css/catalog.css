@@ -628,10 +628,9 @@ input[type="checkbox"]:checked+label::after {
 .products-item {
     position: relative;
     float: left;
-    padding: 2px;
-    width: 260px;
+    width: 267px;
     min-height: 269px;
-    margin-right: 29px;
+    margin-right: 22px;
     margin-bottom: 40px;
 }
 
@@ -647,12 +646,15 @@ input[type="checkbox"]:checked+label::after {
     position: absolute;
     bottom: 65px;
     font-size: 45px;
+    font-weight: 700;
 }
 
 .product-title-link {
     display: inline-block;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
+    text-decoration: underline;
 }
 
 .product-link {
@@ -661,6 +663,23 @@ input[type="checkbox"]:checked+label::after {
     display: block;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.product-icon {
+    position: absolute;
+    bottom: 76px;
+    left: 83px;
+    width: 27px;
+    height: 32px;
+    background: url("../img/rubl-icon.svg") no-repeat 0 0;
+}
+
+.weight {
+    position: absolute;
+    top: 9px;
+    left: 110px;
+    font-size: 30px;
+    line-height: 45px;
 }
 
 .paginator {
