@@ -329,6 +329,7 @@ a {
     vertical-align: top;
     font-size: 14px;
     line-height: 16px;
+    padding-bottom: 5px;
 }
 
 .search a {
@@ -348,7 +349,7 @@ a {
     position: absolute;
     content: "";
     left: 10px;
-    bottom: 7px;
+    bottom: 12px;
     width: 17px;
     height: 17px;
     background-image: url(../img/sprite/sprite.png);
@@ -360,7 +361,7 @@ a {
     position: absolute;
     content: "";
     left: 10px;
-    bottom: 7px;
+    bottom: 12px;
     width: 17px;
     height: 17px;
     background-image: url(../img/sprite/sprite.png);
@@ -376,7 +377,7 @@ a {
     display: none;
     position: absolute;
     right: 5px;
-    top: 35px;
+    top: 100%;
     width: 325px;
     padding: 20px 15px;
     background: #f8f7f4;
@@ -417,7 +418,7 @@ input[placeholder="Что ищем?"] {
 .user-block::before {
     position: absolute;
     left: 15px;
-    bottom: 6px;
+    bottom: 11px;
     content: "";
     width: 20px;
     height: 19px;
@@ -428,7 +429,7 @@ input[placeholder="Что ищем?"] {
 .user-block:hover::before {
     position: absolute;
     left: 15px;
-    bottom: 6px;
+    bottom: 11px;
     content: "";
     width: 20px;
     height: 19px;
@@ -514,7 +515,7 @@ input[placeholder="Пароль"] {
 .basket:before {
     position: absolute;
     left: 15px;
-    bottom: 6px;
+    bottom: 11px;
     content: "";
     width: 21px;
     height: 20px;
@@ -525,7 +526,7 @@ input[placeholder="Пароль"] {
 .basket:hover::before {
     position: absolute;
     left: 15px;
-    bottom: 6px;
+    bottom: 11px;
     content: "";
     width: 21px;
     height: 20px;
