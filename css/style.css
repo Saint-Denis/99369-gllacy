@@ -558,7 +558,6 @@
         text-align: center;
         color: #ffffff;
         margin-bottom: 35px;
-        z-index: 0;
     }
     
     .slide-title {
@@ -998,87 +997,87 @@
     }
     
     .modal-content {
-    display: none;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    margin-left: -238px;
-    width: 435px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    color: #999999;
-    background: #f8f7f4;
-}
-
-.modal-content-close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 22px;
-    font-size: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-}
-
-.modal-content-close::before,
-.modal-content-close::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 2px;
-    width: 19px;
-    height: 3px;
-    background: #000000;
-    border-radius: 1px;
-}
-
-.modal-content-close::before {
-    transform: rotate(45deg);
-}
-
-.modal-content-close::after {
-    transform: rotate(-45deg);
-}
-
-.modal-content-title {
-    font-size: 24px;
-    line-height: 28px;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 20px;
-    color: #323232;
-}
-
-.login-form input[type="text"],
-.login-form input[type="email"] {
-    width: 265px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 12px 11px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
-    font-family: "Roboto", "Arial", sans-serif;
-}
-
-textarea {
-    width: 392px;
-    padding: 12px 11px;
-    min-height: 155px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #d3d3d2;
-}
-
-.login-form .btn-submit {
-    float: right;
-    margin-bottom: 28px;
-}
-
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        margin-left: -238px;
+        width: 435px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        color: #999999;
+        background: #f8f7f4;
+    }
+    
+    .modal-content-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 22px;
+        font-size: 0;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+    
+    .modal-content-close::before,
+    .modal-content-close::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 2px;
+        width: 19px;
+        height: 3px;
+        background: #000000;
+        border-radius: 1px;
+    }
+    
+    .modal-content-close::before {
+        transform: rotate(45deg);
+    }
+    
+    .modal-content-close::after {
+        transform: rotate(-45deg);
+    }
+    
+    .modal-content-title {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+        color: #323232;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="email"] {
+        width: 265px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 11px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #d3d3d2;
+        border-radius: 5px;
+        font-family: "Roboto", "Arial", sans-serif;
+    }
+    
+    textarea {
+        width: 392px;
+        padding: 12px 11px;
+        min-height: 155px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #d3d3d2;
+    }
+    
+    .login-form .btn-submit {
+        float: right;
+        margin-bottom: 28px;
+    }
+    
     .map-img {
         height: 433px;
         background: url("../img/map.jpg") 0 0 no-repeat;
