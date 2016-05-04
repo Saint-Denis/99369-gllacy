@@ -368,6 +368,36 @@ a {
     background-position: -10px -472px;
 }
 
+.search:hover .search-wrapper {
+    display: block;
+}
+
+.search-wrapper {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    width: 325px;
+    padding: 20px 15px;
+    background: #f8f7f4;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+input[type="search"] {
+    width: 310px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+}
+
+input[placeholder="Что ищем?"] {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    padding: 10px 10px;
+    padding-right: 150px;
+}
+
 .user-block a {
     display: block;
     padding-top: 8px;
@@ -404,6 +434,66 @@ a {
     height: 19px;
     background-image: url(../img/sprite/sprite.png);
     background-position: -10px -1605px;
+}
+
+.user-block:hover .user-wrapper {
+    display: block;
+}
+
+.user-wrapper {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    width: 245px;
+    padding: 20px 15px;
+    background: #f8f7f4;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 240px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+}
+
+input[placeholder="Электронная почта"],
+input[placeholder="Пароль"] {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.user-btn {
+    padding: 13px 23px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fefefe;
+    float: left;
+    margin-right: 15px;
+}
+
+.user-wrapper a {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    background: #f8f7f4;
+    color: #323232;
+    text-decoration: underline;
 }
 
 .basket a {
@@ -475,6 +565,7 @@ a {
     text-align: center;
     color: #ffffff;
     margin-bottom: 35px;
+    z-index: 0;
 }
 
 .slide-title {
@@ -579,21 +670,23 @@ a {
 .btn {
     display: inline-block;
     font-weight: 700;
-    background: #f26843;
     background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     border-radius: 30px;
+    box-shadow: 0px 2px 2px 0px #ac1000;
     outline: none;
     border: none;
 }
 
-.btn-feedback {
-    width: 250px;
-    min-height: 45px;
-    line-height: 45px;
-    text-align: center;
-    margin-top: 15px;
+.btn:hover {
+    background: #f17d64;
+    box-shadow: 0px 1px 2px 0px #ac1000;
+}
+
+.btn:active {
+    background: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+    box-shadow: inset 0px 2px 2px 0px #942718;
 }
 
 
@@ -647,7 +740,6 @@ a {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    box-shadow: -1px 0px rgba(220, 195, 35, 0.64);
 }
 
 .products {
@@ -743,14 +835,14 @@ a {
 
 .features-box-left {
     position: relative;
-    width: 517px;
-    margin-right: 46px;
+    width: 535px;
+    margin-right: 26px;
     float: left;
 }
 
 .features-box-right {
     position: relative;
-    width: 525px;
+    width: 535px;
     float: left;
 }
 
@@ -836,7 +928,7 @@ a {
     font-weight: 400;
 }
 
-input[type="email"] {
+.news-box-email input[type="email"] {
     width: 365px;
     padding: 12px 0;
     min-height: 40px;
@@ -847,7 +939,7 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
-input[placeholder="Элетронная почта"] {
+.news-box-email input[placeholder="Элетронная почта"] {
     padding-left: 12px;
     padding-right: 25px;
     font-size: 16px;
@@ -907,6 +999,14 @@ input[placeholder="Элетронная почта"] {
     color: #484948;
     font-weight: bold;
     margin-bottom: 12px;
+}
+
+.btn-feedback {
+    width: 250px;
+    min-height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .map-img {
