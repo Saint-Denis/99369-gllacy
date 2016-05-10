@@ -237,11 +237,11 @@ a:hover {
 .logo-img {
     display: inline-block;
     vertical-align: top;
-    min-width: 150px;
-    min-height: 75px;
+    width: 154px;
+    height: 65px;
     padding-top: 7px;
-    margin-right: 28px;
     float: left;
+    margin-right: 7px;
 }
 
 .navigation {
@@ -255,7 +255,7 @@ a:hover {
     margin: 0;
     padding: 0;
     font-size: 0;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .menu>li {
@@ -268,7 +268,7 @@ a:hover {
 .menu>li>a {
     display: inline-block;
     vertical-align: top;
-    padding: 10px 14px;
+    padding: 7px 14px;
     font-size: 16px;
     line-height: 18px;
     text-decoration: underline;
@@ -290,7 +290,7 @@ a:hover {
 }
 
 .inner-page .navigation .active {
-    padding: 10px 20px;
+    padding: 7px 14px;
     font-size: 16px;
     line-height: 18px;
     background: #d07058;
@@ -352,17 +352,20 @@ a:hover {
     width: 90%;
     bottom: 0;
     height: 1px;
-    background: #d1d0ce
-;
+    background: #d1d0ce;
 }
 
 .site-actions {
     max-width: 300px;
     float: right;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 0px;
     font-weight: 700;
-    margin-bottom: 17px;
+}
+
+.inner-page .site-actions {
+    margin-right: -15px;
 }
 
 .search,
@@ -563,7 +566,7 @@ input[placeholder="Пароль"] {
     padding-bottom: 8px;
     border-radius: 30px;
     padding-left: 45px;
-    padding-right: 15px;
+    padding-right: 30px;
     background: #a1b4a9;
 }
 
@@ -730,6 +733,7 @@ td {
 }
 
 .work-time {
+    float: right;
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 5px;
@@ -738,6 +742,7 @@ td {
 .phone {
     font-size: 22px;
     line-height: 24px;
+    float: right;
 }
 
 
@@ -751,15 +756,17 @@ td {
     padding-top: 270px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .slide-title {
+    font-family: "Robotoblack", "Arial", sans-serif;
     width: 700px;
     margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 800;
     font-size: 60px;
+    line-height: 61px;
 }
 
 .slide-btn {
@@ -879,7 +886,7 @@ td {
 }
 
 .btn-new {
-    padding: 10px 25px;
+    padding: 9px 27px;
     font-size: 16px;
     line-height: 16px;
     background: #a6b7ad;
@@ -896,7 +903,7 @@ td {
 }
 
 .btn-new:active {
-    padding: 12px 25px;
+    padding: 11px 27px;
     background: #eaeaea;
     color: #353535;
     border: none;
@@ -921,9 +928,12 @@ td {
 .btn-feedback {
     width: 250px;
     min-height: 45px;
+    font-size: 18px;
     line-height: 45px;
+    vertical-align: middle;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .btn-submit {
@@ -1011,7 +1021,7 @@ td {
     padding: 0;
     font-size: 35px;
     line-height: 41px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 
@@ -1028,23 +1038,19 @@ td {
 .select-title {
     display: inline-block;
     vertical-align: top;
+    margin-left: 15px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
 }
 
-.select-title {
-    margin-left: 15px;
-}
-
 .form-top select {
     display: inline-block;
     vertical-align: top;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     padding-left: 15px;
-    padding-right: 45px;
-    margin-top: 7px;
+    padding-right: 30px;
     margin-right: 15px;
     background: #a9bab0;
     border-radius: 30px;
@@ -1091,14 +1097,13 @@ td {
 }
 
 .range-filter {
-    padding-top: 7px;
     width: 220px;
     margin: auto;
 }
 
 .range-controls {
     position: relative;
-    height: 40px;
+    height: 35px;
     padding: 0 15px;
     background: #aabbb1;
     border-radius: 30px;
@@ -1157,10 +1162,6 @@ td {
     margin-left: 15px;
 }
 
-.radio-items {
-    border-radius: 30px;
-}
-
 .radio-items li {
     display: inline-block;
     vertical-align: top;
@@ -1176,9 +1177,9 @@ td {
     font-size: 16px;
     font-weight: 700;
     background: #aabbb1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 30px;
 }
 
 input[type="radio"],
@@ -1282,15 +1283,15 @@ input[type="radio"]:disabled+label::after {
 
 .checkbox-items {
     height: 20px;
-    width: 715px;
+    width: 705px;
     font-size: 16px;
     font-weight: 700;
     background: #aabbb1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 30px;
     margin-top: 7px;
-    margin-right: 17px;
+    margin-right: 15px;
 }
 
 input[type="checkbox"]+label {
@@ -1360,7 +1361,7 @@ input[type="checkbox"]:disabled+label::after {
 /* End of filters */
 
 .banner {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .banner-title {
@@ -1396,18 +1397,16 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .inner-page .products {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 .products-item {
+    padding: 10px;
     position: relative;
     float: left;
-    padding: 10px;
     padding-bottom: 0px;
-    width: 246px;
-    min-height: 269px;
-    margin-right: 27px;
-    margin-bottom: 30px;
+    width: 266px;
+    margin-bottom: 20px;
 }
 
 .products-item:nth-child(4n) {
@@ -1436,11 +1435,11 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .product-title-link {
+    font-family: "Robotomedium", "Arial", sans-serif;
     display: inline;
-    margin-top: 15px;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 700;
+    font-weight: 400;
     border-bottom: 1px solid #a9bbb1;
 }
 
@@ -1452,7 +1451,7 @@ input[type="checkbox"]:disabled+label::after {
 
 .product-price {
     position: absolute;
-    top: 195px;
+    top: 210px;
     padding-right: 40px;
     font-size: 45px;
     font-weight: 700;
@@ -1460,8 +1459,9 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .product-link {
-    width: 245px;
-    height: 243px;
+    width: 267px;
+    height: 265px;
+    margin-bottom: 15px;
     display: block;
     border-radius: 50%;
     overflow: hidden;
@@ -1531,7 +1531,7 @@ input[type="checkbox"]:disabled+label::after {
 
 .pagination li a {
     display: block;
-    padding: 6px 10px;
+    padding: 4px 8px;
     color: #fff;
 }
 
@@ -1574,7 +1574,7 @@ input[type="checkbox"]:disabled+label::after {
 .features {
     padding-top: 25px;
     padding-left: 23px;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
     border-radius: 10px;
     background: #e8d8b4 url("../img/seo-bg.png");
 }
@@ -1722,8 +1722,7 @@ input[type="checkbox"]:disabled+label::after {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 250px;
-    min-height: 305px;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
     background: #fffefd;
@@ -1731,11 +1730,12 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .feedback-text {
+    width: 195px;
     color: #484948;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 400px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .feedback-address {
@@ -1744,7 +1744,7 @@ input[type="checkbox"]:disabled+label::after {
     line-height: 24px;
     font-weight: 700;
     line-height: 20px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .feedback-phone {
@@ -1752,7 +1752,6 @@ input[type="checkbox"]:disabled+label::after {
     line-height: 22px;
     color: #484948;
     font-weight: bold;
-    margin-bottom: 12px;
 }
 
 .modal-content {
@@ -1768,6 +1767,26 @@ input[type="checkbox"]:disabled+label::after {
     padding-bottom: 0px;
     color: #999999;
     background: #f8f7f4;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
 }
 
 .modal-content-close {
@@ -1816,7 +1835,7 @@ input[type="checkbox"]:disabled+label::after {
 .login-form input[type="email"] {
     width: 265px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 16px;
     padding: 12px 11px;
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -1871,7 +1890,7 @@ textarea {
     margin-top: 35px;
     margin-bottom: 27px;
     font-size: 0;
-    width: 300px;
+    width: 380px;
     float: left;
 }
 
@@ -1984,10 +2003,6 @@ textarea {
     margin-right: 20px;
 }
 
-.info li {
-    padding-bottom: 9px;
-}
-
 .info a:hover {
     color: #ffffff;
 }
@@ -2033,8 +2048,13 @@ textarea {
     font-weight: 700;
 }
 
+.copyright {
+    font-size: 12px;
+    line-height: 18px;
+}
+
 .footer-copyright {
-    margin-top: 18px;
+    margin-top: 25px;
     margin-bottom: 25px;
     max-width: 255px;
     float: right;
