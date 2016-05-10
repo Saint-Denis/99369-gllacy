@@ -364,10 +364,6 @@ a:hover {
     font-weight: 700;
 }
 
-.inner-page .site-actions {
-    margin-right: -15px;
-}
-
 .search,
 .user-block,
 .basket {
@@ -568,6 +564,10 @@ input[placeholder="Пароль"] {
     padding-left: 45px;
     padding-right: 30px;
     background: #a1b4a9;
+}
+
+.inner-page .basket>a {
+    padding-right: 15px;
 }
 
 .basket>a:hover {
