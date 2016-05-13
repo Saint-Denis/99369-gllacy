@@ -933,7 +933,7 @@ td {
 }
 
 .btn-new:active {
-    padding: 10px 27px;
+    padding: 10px 29px;
     background: #eaeaea;
     color: #353535;
     border: none;
@@ -999,10 +999,11 @@ td {
     vertical-align: top;
     text-align: center;
     width: 80%;
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 700;
     padding: 10px 15px;
+    margin-bottom: 5px;
 }
 
 
