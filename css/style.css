@@ -455,6 +455,11 @@ a:hover {
     outline: none;
 }
 
+.search-wrapper input[type="search"]:focus {
+    border: 1px solid #8fbdec;
+    outline: none;
+}
+
 .search-wrapper input[placeholder="Что ищем?"] {
     font-size: 14px;
     line-height: 24px;
@@ -994,11 +999,10 @@ td {
     vertical-align: top;
     text-align: center;
     width: 80%;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 16px;
     font-weight: 700;
     padding: 10px 15px;
-    margin-bottom: 5px;
 }
 
 
