@@ -594,6 +594,17 @@ input[placeholder="Пароль"] {
     background-position: -10px -90px;
 }
 
+.inner-page .basket>a:before {
+    position: absolute;
+    left: 15px;
+    bottom: 11px;
+    content: "";
+    width: 21px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -10px -10px;
+}
+
 .basket>a:hover::before {
     position: absolute;
     left: 15px;
@@ -898,6 +909,7 @@ td {
     padding: 8px 27px;
     font-size: 16px;
     line-height: 16px;
+    font-weight: 500;
     background: #a6b7ad;
     color: #fcfcfc;
     border: 2px solid #f9f9f9;
@@ -981,7 +993,6 @@ td {
     line-height: 24px;
     font-weight: 700;
     padding: 10px 15px;
-    margin-left: 10px;
 }
 
 
@@ -1037,11 +1048,17 @@ td {
 
 /* Filters of inner-page */
 
+.filters {
+    font-size: 0;
+    margin-bottom: 30px;
+    font-family: 'Robotomedium';
+    font-weight: 500;
+}
+
 .select {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
-    font-weight: 700;
     line-height: 18px;
 }
 
@@ -1049,19 +1066,20 @@ td {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
+    margin-bottom: 7px;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
 }
 
 .form-top select {
     display: inline-block;
     vertical-align: top;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 30px;
-    margin-right: 15px;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-right: 18px;
     background: #a9bab0;
     border-radius: 30px;
     color: #ffffff;
@@ -1085,24 +1103,19 @@ td {
     background-repeat: no-repeat;
 }
 
-.filters {
-    font-size: 0;
-    margin-bottom: 30px;
-}
-
 .range-title {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
-    margin-left: 15px;
+    margin-left: 12px;
+    margin-bottom: 7px;
 }
 
 .range {
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: 12px;
     font-size: 16px;
 }
 
@@ -1165,11 +1178,10 @@ td {
 }
 
 .radio-title {
-    display: inline-block;
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    margin-left: 15px;
+    margin-left: 12px;
+    margin-bottom: 7px;
 }
 
 .radio-items li {
@@ -1182,13 +1194,13 @@ td {
 }
 
 .radio-items {
-    height: 20px;
-    width: 410px;
+    /*width: 385px;*/
     font-size: 16px;
-    font-weight: 700;
+    line-height: 18px;
     background: #aabbb1;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 15px;
     border-radius: 30px;
 }
 
@@ -1276,8 +1288,8 @@ input[type="radio"]:disabled+label::after {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    font-weight: 700;
-    margin-left: 15px;
+    margin-left: 13px;
+    margin-bottom: 5px;
 }
 
 .checkbox-items ul {
@@ -1293,22 +1305,20 @@ input[type="radio"]:disabled+label::after {
 
 .checkbox-items {
     height: 20px;
-    width: 705px;
+    width: 700px;
     font-size: 16px;
-    font-weight: 700;
     background: #aabbb1;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 30px;
-    margin-top: 7px;
-    margin-right: 15px;
+    margin-right: 13px;
 }
 
 input[type="checkbox"]+label {
     position: relative;
     cursor: pointer;
     line-height: 18px;
-    padding-left: 51px;
+    padding-left: 48px;
 }
 
 input[type="checkbox"]+label::before {
@@ -1493,24 +1503,26 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .product-btn {
+    display: none;
     text-align: center;
     padding: 10px;
     background: rgba(248, 247, 244, 0.3);
-    margin-bottom: -39px;
+    margin: 0 -10px -64px;
     position: relative;
     z-index: 2;
-    display: none;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .products-item:hover {
     background: rgba(248, 247, 244, 0.2);
     z-index: 2;
-    border-radius: 10px;
-    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .products-item:hover .product-btn {
     display: block;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .weight {
@@ -1796,6 +1808,8 @@ input[type="checkbox"]:disabled+label::after {
     padding-bottom: 0px;
     color: #999999;
     background: #f8f7f4;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 @-webkit-keyframes bounce {
@@ -1866,38 +1880,53 @@ input[type="checkbox"]:disabled+label::after {
     color: #323232;
 }
 
-.login-form input[type="text"],
-.login-form input[type="email"] {
-    width: 265px;
+.body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.textinput {
+    height: 44px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.textinput input,
+.textinput label {
+    cursor: text;
     font-size: 16px;
-    line-height: 16px;
-    padding: 12px 11px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+    line-height: 24px;
+    padding: 9px 15px;
+    position: absolute;
+    width: 60%;
+}
+
+.textinput input {
     border: 1px solid #d3d3d2;
     border-radius: 5px;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
-.login-form input[type="text"]:hover,
-.login-form input[type="email"]:hover {
-    border: 1px solid #c7c6c5;
-    box-shadow: 0 0 0 1px #c7c6c5;
+.textinput input:hover {
+    border: 2px solid #d3d3d2;
+    padding: 8px 14px;
+    border-radius: 5px;
 }
 
-.login-form input[type="text"]:focus,
-.login-form input[type="email"]:focus {
-    border: 1px solid #8fbdec;
-    box-shadow: 0 0 0 1px #8fbdec;
+.textinput input:focus {
+    border: 2px solid #8fbdec;
+    padding: 8px 14px;
+    border-radius: 5px;
 }
 
-.login-form input[placeholder="Как вас зовут?"]:focus,
-.login-form input[placeholder="Напишите что-нибудь..."]:focus {
-    color: #8fbdec;
+.textinput label {
+    color: #d3d3d2;
 }
 
 textarea {
-    width: 392px;
+    width: 95%;
     padding: 12px 11px;
     min-height: 155px;
     margin-bottom: 20px;
@@ -1907,6 +1936,11 @@ textarea {
 
 textarea:hover {
     border: 1px solid #d3d3d2;
+    box-shadow: 0 0 0 1px #d3d3d2;
+}
+
+textarea:focus {
+    border: 1px solid #8fbdec;
     box-shadow: 0 0 0 1px #d3d3d2;
 }
 
@@ -1928,11 +1962,13 @@ textarea:hover {
 /*  Footer  */
 
 .footer-social {
+    padding-left: 10px;
     min-height: 45px;
     margin-top: 35px;
     margin-bottom: 27px;
+    margin-right: 28px;
     font-size: 0;
-    width: 380px;
+    width: 370px;
     float: left;
 }
 
@@ -1940,7 +1976,7 @@ textarea:hover {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
-    border: 5px solid #c2cec7;
+    border: 3px solid #c2cec7;
     border-radius: 50%;
     margin-right: 10px;
     background-image: url(../img/sprite/sprite-social.png);
@@ -2037,9 +2073,8 @@ textarea:hover {
 
 .info {
     min-height: 45px;
-    width: 380px;
     float: left;
-    margin-top: 35px;
+    margin-top: 32px;
     margin-bottom: 27px;
     margin-right: 20px;
 }
@@ -2054,9 +2089,6 @@ textarea:hover {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    -webkit-column-width: 100px;
-    -moz-column-width: 100px;
-    column-width: 100px;
 }
 
 .footer-menu li a {
