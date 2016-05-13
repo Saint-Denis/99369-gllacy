@@ -452,6 +452,7 @@ a:hover {
     border-radius: 5px;
     border: 1px solid #d3d3d2;
     font-family: "Roboto", "Arial", sans-serif;
+    outline: none;
 }
 
 .search-wrapper input[placeholder="Что ищем?"] {
@@ -522,15 +523,18 @@ a:hover {
 
 .user-wrapper input[type="email"],
 input[type="password"] {
-    margin-bottom: 20px;
-}
-
-.user-wrapper input[type="email"],
-input[type="password"] {
     width: 240px;
     border-radius: 5px;
+    margin-bottom: 20px;
     border: 1px solid #d3d3d2;
     font-family: "Roboto", "Arial", sans-serif;
+    outline: none;
+}
+
+.user-wrapper input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #8fbdec;
+    outline: none;
 }
 
 input[placeholder="Электронная почта"],
@@ -985,6 +989,7 @@ td {
 }
 
 .btn-view {
+    font-family: "Robotoregular", "Arial", sans-serif;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -993,6 +998,7 @@ td {
     line-height: 24px;
     font-weight: 700;
     padding: 10px 15px;
+    margin-bottom: 5px;
 }
 
 
@@ -1072,6 +1078,7 @@ td {
 }
 
 .form-top select {
+    height: 36px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
@@ -1454,7 +1461,7 @@ input[type="checkbox"]:disabled+label::after {
     display: inline-block;
     vertical-align: top;
     width: 255px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     max-height: 40px;
     text-align: center;
 }
@@ -1506,17 +1513,18 @@ input[type="checkbox"]:disabled+label::after {
     display: none;
     text-align: center;
     padding: 10px;
+    padding-top: 0px;
     background: rgba(248, 247, 244, 0.3);
-    margin: 0 -10px -64px;
+    margin: 0 -10px -59px;
     position: relative;
     z-index: 2;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .products-item:hover {
     background: rgba(248, 247, 244, 0.2);
     z-index: 2;
-    border-radius: 10px 10px 0 0px;
+    border-radius: 5px 5px 0 0px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1526,6 +1534,7 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .weight {
+    display: inline-block;
     vertical-align: bottom;
     font-size: 30px;
     line-height: 45px;
@@ -1801,7 +1810,7 @@ input[type="checkbox"]:disabled+label::after {
     left: 50%;
     margin-top: -232px;
     margin-left: -238px;
-    width: 435px;
+    width: 480px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -1838,6 +1847,8 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .modal-content-close {
+    display: block;
+    height: 22px;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -1896,12 +1907,12 @@ input[type="checkbox"]:disabled+label::after {
 
 .textinput input,
 .textinput label {
+    width: 60%;
     cursor: text;
     font-size: 16px;
     line-height: 24px;
     padding: 9px 15px;
     position: absolute;
-    width: 60%;
 }
 
 .textinput input {
@@ -1919,6 +1930,7 @@ input[type="checkbox"]:disabled+label::after {
     border: 2px solid #8fbdec;
     padding: 8px 14px;
     border-radius: 5px;
+    outline: none;
 }
 
 .textinput label {
@@ -1942,6 +1954,7 @@ textarea:hover {
 textarea:focus {
     border: 1px solid #8fbdec;
     box-shadow: 0 0 0 1px #d3d3d2;
+    outline: none;
 }
 
 .login-form .btn-submit {
