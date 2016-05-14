@@ -283,15 +283,28 @@ a:hover {
 
 .menu>li>a:active {
     box-shadow: inset 0px 2px 1px 0px #696969;
+    color: #333333;
+    background: #f7f6f3;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 .inner-page .menu a.nav-logo {
     padding: 0px 0px;
 }
 
-.inner-page .menu>.active>a {
+.inner-page li.active>a {
     background: #d07058;
     border-radius: 30px;
+    text-decoration: none;
+}
+
+.inner-page li.active>a:active {
+    box-shadow: inset 0px 2px 1px 0px #696969;
+    color: #333333;
+    background: #f7f6f3;
+    border-radius: 30px;
+    text-decoration: none;
 }
 
 .inner-page .navigation li.active {
@@ -402,8 +415,21 @@ a:hover {
     background: #a1b4a9;
 }
 
-.search a:hover {
+.search:hover a {
     background: #f8f7f4;
+}
+
+.search:hover a:before {
+    background: #f8f7f4;
+    position: absolute;
+    content: "";
+    left: 10px;
+    bottom: 12px;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/sprite/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -10px -472px;
 }
 
 .search::before {
@@ -449,22 +475,26 @@ a:hover {
 
 .search-wrapper input[type="search"] {
     width: 100%;
+    padding: 10px 10px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
     border-radius: 5px;
     border: 1px solid #d3d3d2;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Robotoregular", "Arial", sans-serif;
+    outline: none;
+}
+
+.search-wrapper input[type="search"]:hover {
+    padding: 9px 9px;
+    border: 2px solid #d3d3d2;
     outline: none;
 }
 
 .search-wrapper input[type="search"]:focus {
-    border: 1px solid #8fbdec;
+    padding: 9px 9px;
+    border: 2px solid #8fbdec;
     outline: none;
-}
-
-.search-wrapper input[placeholder="Что ищем?"] {
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
-    padding: 10px 10px;
 }
 
 .user-block {
@@ -485,6 +515,22 @@ a:hover {
 .user-block>a:hover {
     color: #373737;
     background: #f8f7f4;
+}
+
+.user-block:hover a {
+    background: #f8f7f4;
+    color: #373737;
+}
+
+.user-block:hover>a:before {
+    position: absolute;
+    left: 15px;
+    bottom: 11px;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -10px -1605px;
 }
 
 .user-block::before {
@@ -529,26 +575,30 @@ a:hover {
 .user-wrapper input[type="email"],
 input[type="password"] {
     width: 240px;
-    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    padding: 10px 10px;
     margin-bottom: 20px;
+    border-radius: 5px;
     border: 1px solid #d3d3d2;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Robotoregular", "Arial", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.user-wrapper input[type="email"]:hover,
+input[type="password"]:hover {
+    padding: 9px 9px;
+    border: 2px solid #d3d3d2;
     outline: none;
 }
 
 .user-wrapper input[type="email"]:focus,
 input[type="password"]:focus {
-    border: 1px solid #8fbdec;
+    padding: 9px 9px;
+    border: 2px solid #8fbdec;
     outline: none;
-}
-
-input[placeholder="Электронная почта"],
-input[placeholder="Пароль"] {
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
-    padding: 10px 10px;
-    box-sizing: border-box;
 }
 
 .user-wrapper a {
@@ -587,12 +637,13 @@ input[placeholder="Пароль"] {
     padding-right: 15px;
 }
 
-.basket>a:hover {
+.basket>a:hover,
+.basket:hover>a {
     color: #373737;
     background: #f8f7f4;
 }
 
-.basket>a:before {
+.basket>a::before {
     position: absolute;
     left: 15px;
     bottom: 11px;
@@ -615,17 +666,17 @@ input[placeholder="Пароль"] {
 }
 
 .basket>a:hover::before {
+    content: "";
     position: absolute;
     left: 15px;
     bottom: 11px;
-    content: "";
     width: 21px;
     height: 20px;
     background-image: url(../img/sprite/sprite.png);
     background-position: -10px -50px;
 }
 
-.inner-page>.basket:hover::before {
+.inner-page>.basket:hover a::before {
     position: absolute;
     left: 15px;
     bottom: 11px;
@@ -937,7 +988,7 @@ td {
     background: #eaeaea;
     color: #353535;
     border: none;
-    box-shadow: inset 0px 2px 0px 1px #696969;
+    box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
 .button {
@@ -1089,7 +1140,7 @@ td {
     text-align: left;
     padding-top: 6px;
     padding-bottom: 6px;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 25px;
     margin-right: 18px;
     background: #a9bab0;
@@ -1743,22 +1794,31 @@ input[type="checkbox"]:disabled+label::after {
 .news-box-email input[type="email"] {
     width: 365px;
     padding: 12px 0;
-    min-height: 40px;
+    padding-left: 12px;
+    padding-right: 25px;
+    font-size: 16px;
+    color: #999999;
     font-family: "Roboto", "Arial", sans-serif;
-    border-radius: 10px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
     margin-right: 10px;
     box-sizing: border-box;
 }
 
-.news-box-email input[placeholder="Элетронная почта"] {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 12px;
-    padding-right: 25px;
-    font-size: 16px;
-    color: #999999;
+.news-box-email input[type="email"]:hover {
+    padding: 11px 0;
+    padding-left: 11px;
+    padding-right: 24px;
+    border: 2px solid #d3d3d2;
+    outline: none;
+}
+
+.news-box-email input[type="email"]:focus {
+    padding: 11px 0;
+    padding-left: 11px;
+    padding-right: 24px;
+    border: 2px solid #8fbdec;
+    outline: none;
 }
 
 .news {
