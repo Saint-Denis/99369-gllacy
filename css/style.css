@@ -464,18 +464,33 @@ a:hover {
     border-radius: 5px;
     border: 1px solid #d3d3d2;
     font-family: "Robotoregular", "Arial", sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     outline: none;
 }
+
 
 .search-wrapper input[type="search"]:hover {
     border: 2px solid #d3d3d2;
     padding: 9px 9px;
+    outline: none;
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     outline: none;
 }
 
 .search-wrapper input[type="search"]:focus {
     border: 2px solid #8fbdec;
     padding: 9px 9px;
+    outline: none;
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     outline: none;
 }
 
