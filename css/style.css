@@ -1,4 +1,4 @@
-body {
+﻿body {
     font-family: "Roboto", "Arial", sans-serif;
     min-width: 1200px;
     color: #ffffff;
@@ -282,27 +282,20 @@ a:hover {
 }
 
 .menu>li>a:active {
-    box-shadow: inset 0px 2px 1px 0px #696969;
-    color: #333333;
-    background: #f7f6f3;
-    border-radius: 30px;
-    text-decoration: none;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+  color: #333333;
+  background: #f7f6f3;
+  border-radius: 30px;
+  text-decoration: none;
+
 }
 
 .inner-page .menu a.nav-logo {
     padding: 0px 0px;
 }
 
-.inner-page li.active>a {
+.inner-page .menu>.active>a {
     background: #d07058;
-    border-radius: 30px;
-    text-decoration: none;
-}
-
-.inner-page li.active>a:active {
-    box-shadow: inset 0px 2px 1px 0px #696969;
-    color: #333333;
-    background: #f7f6f3;
     border-radius: 30px;
     text-decoration: none;
 }
@@ -415,21 +408,9 @@ a:hover {
     background: #a1b4a9;
 }
 
+.search a:hover,
 .search:hover a {
     background: #f8f7f4;
-}
-
-.search:hover a:before {
-    background: #f8f7f4;
-    position: absolute;
-    content: "";
-    left: 10px;
-    bottom: 12px;
-    width: 17px;
-    height: 17px;
-    background-image: url(../img/sprite/sprite.png);
-    background-repeat: no-repeat;
-    background-position: -10px -472px;
 }
 
 .search::before {
@@ -444,9 +425,10 @@ a:hover {
     background-position: -10px -509px;
 }
 
-.search a:hover::before {
-    position: absolute;
+.search a:hover::before,
+.search:hover a::before {
     content: "";
+    position: absolute;
     left: 10px;
     bottom: 12px;
     width: 17px;
@@ -476,9 +458,9 @@ a:hover {
 .search-wrapper input[type="search"] {
     width: 100%;
     padding: 10px 10px;
-    color: #999999;
     font-size: 14px;
     line-height: 24px;
+    color: #999999;
     border-radius: 5px;
     border: 1px solid #d3d3d2;
     font-family: "Robotoregular", "Arial", sans-serif;
@@ -486,16 +468,18 @@ a:hover {
 }
 
 .search-wrapper input[type="search"]:hover {
-    padding: 9px 9px;
     border: 2px solid #d3d3d2;
+    padding: 9px 9px;
     outline: none;
 }
 
 .search-wrapper input[type="search"]:focus {
-    padding: 9px 9px;
     border: 2px solid #8fbdec;
+    padding: 9px 9px;
     outline: none;
 }
+
+
 
 .user-block {
     padding-bottom: 5px;
@@ -512,25 +496,10 @@ a:hover {
     background: #a1b4a9;
 }
 
-.user-block>a:hover {
-    color: #373737;
-    background: #f8f7f4;
-}
-
+.user-block>a:hover,
 .user-block:hover a {
-    background: #f8f7f4;
     color: #373737;
-}
-
-.user-block:hover>a:before {
-    position: absolute;
-    left: 15px;
-    bottom: 11px;
-    content: "";
-    width: 20px;
-    height: 19px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -10px -1605px;
+    background: #f8f7f4;
 }
 
 .user-block::before {
@@ -544,7 +513,8 @@ a:hover {
     background-position: -10px -1644px;
 }
 
-.user-block>a:hover::before {
+.user-block>a:hover::before,
+ .user-block:hover>a::before {
     position: absolute;
     left: 15px;
     bottom: 11px;
@@ -575,31 +545,32 @@ a:hover {
 .user-wrapper input[type="email"],
 input[type="password"] {
     width: 240px;
+    padding: 10px 10px;
     font-size: 14px;
     line-height: 24px;
     color: #999999;
-    padding: 10px 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
     border: 1px solid #d3d3d2;
     font-family: "Robotoregular", "Arial", sans-serif;
     box-sizing: border-box;
-    outline: none;
 }
 
 .user-wrapper input[type="email"]:hover,
 input[type="password"]:hover {
-    padding: 9px 9px;
     border: 2px solid #d3d3d2;
+    padding: 9px 9px;
     outline: none;
 }
 
+
 .user-wrapper input[type="email"]:focus,
 input[type="password"]:focus {
-    padding: 9px 9px;
     border: 2px solid #8fbdec;
+    padding: 9px 9px;
     outline: none;
 }
+
 
 .user-wrapper a {
     display: inline-block;
@@ -643,7 +614,7 @@ input[type="password"]:focus {
     background: #f8f7f4;
 }
 
-.basket>a::before {
+.basket>a:before {
     position: absolute;
     left: 15px;
     bottom: 11px;
@@ -654,7 +625,8 @@ input[type="password"]:focus {
     background-position: -10px -90px;
 }
 
-.inner-page .basket>a:before {
+.inner-page .basket>a:before,
+.inner-page .basket:hover>a:before {
     position: absolute;
     left: 15px;
     bottom: 11px;
@@ -666,26 +638,16 @@ input[type="password"]:focus {
 }
 
 .basket>a:hover::before {
-    content: "";
     position: absolute;
     left: 15px;
     bottom: 11px;
+    content: "";
     width: 21px;
     height: 20px;
     background-image: url(../img/sprite/sprite.png);
     background-position: -10px -50px;
 }
 
-.inner-page>.basket:hover a::before {
-    position: absolute;
-    left: 15px;
-    bottom: 11px;
-    content: "";
-    width: 21px;
-    height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -10px -10px;
-}
 
 .inner-page .basket:hover .basket-form {
     display: block;
@@ -1142,8 +1104,8 @@ td {
     padding-bottom: 6px;
     padding-left: 15px;
     padding-right: 25px;
-    margin-right: 18px;
-    background: #a9bab0;
+    margin-right: 15px;
+    background-color: #a9bab0;
     border-radius: 30px;
     color: #ffffff;
     outline: none;
@@ -1154,16 +1116,18 @@ td {
     appearance: none;
     text-indent: 0.01px;
     background-image: url('../img/marker.png');
+     background-repeat: no-repeat;
     background-position: 90% center;
-    background-repeat: no-repeat;
+   
 }
 
 .form-top select:hover {
-    background: #ffffff;
+    background-color: #ffffff;
     color: #323232;
     background-image: url('../img/marker-hover.png');
-    background-position: 90% center;
     background-repeat: no-repeat;
+    background-position: 90% center;
+    
 }
 
 .range-title {
@@ -1178,7 +1142,7 @@ td {
 .range {
     display: inline-block;
     vertical-align: top;
-    margin-right: 12px;
+    margin-right: 15px;
     font-size: 16px;
 }
 
@@ -1345,6 +1309,7 @@ input[type="radio"]:disabled+label::after {
 .checkbox {
     display: inline-block;
     vertical-align: top;
+
 }
 
 .checkbox-title {
@@ -1362,26 +1327,26 @@ input[type="radio"]:disabled+label::after {
 
 .checkbox-items li {
     display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
+    vertical-align:top;
+   
 }
+
 
 .checkbox-items {
     height: 20px;
     width: 700px;
-    font-size: 16px;
     background: #aabbb1;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 30px;
-    margin-right: 13px;
+    margin-right: 15px;
 }
 
 input[type="checkbox"]+label {
     position: relative;
     cursor: pointer;
-    line-height: 18px;
-    padding-left: 48px;
+    font-size: 16px;
+    padding-left: 52px;
 }
 
 input[type="checkbox"]+label::before {
@@ -1793,20 +1758,25 @@ input[type="checkbox"]:disabled+label::after {
 
 .news-box-email input[type="email"] {
     width: 365px;
-    padding: 12px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 12px;
     padding-right: 25px;
-    font-size: 16px;
-    color: #999999;
-    font-family: "Roboto", "Arial", sans-serif;
+    min-height: 40px;
+    font-family: "Robotoregular", "Arial", sans-serif;
+    border-radius: 10px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
     box-sizing: border-box;
 }
 
 .news-box-email input[type="email"]:hover {
-    padding: 11px 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 11px;
     padding-right: 24px;
     border: 2px solid #d3d3d2;
@@ -1814,12 +1784,15 @@ input[type="checkbox"]:disabled+label::after {
 }
 
 .news-box-email input[type="email"]:focus {
-    padding: 11px 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 11px;
     padding-right: 24px;
     border: 2px solid #8fbdec;
     outline: none;
 }
+
+
 
 .news {
     margin-bottom: 40px;
@@ -2206,3 +2179,94 @@ textarea:focus {
 
 
 /* End of Footer */
+
+
+/* Fonts*/
+/* Generated by Font Squirrel (https://www.fontsquirrel.com) on May 10, 2016 */
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'), url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'), url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'), url('../fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'), url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('../fonts/roboto-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'), url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('../fonts/roboto-thinitalic-webfont.woff2') format('woff2'), url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End of Fonts*/
+
+
