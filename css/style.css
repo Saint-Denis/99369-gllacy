@@ -303,11 +303,11 @@ li.menu-item:hover>a {
     padding-bottom: 5px;
 }
 
-.sub-menu .creamy-active {
+.sub-menu-list .creamy-active {
     background: #d07058;
 }
 
-.sub-menu {
+.sub-menu-list {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -323,7 +323,7 @@ li.menu-item:hover>a {
     overflow: hidden;
 }
 
-.sub-menu a {
+.sub-menu-list a {
     display: block;
     font-size: 14px;
     line-height: 16px;
@@ -335,26 +335,26 @@ li.menu-item:hover>a {
     position: relative;
 }
 
-.menu li:hover .sub-menu {
+li.menu-item:hover .sub-menu-list {
     display: block;
 }
 
-.sub-menu>li:hover a {
+li.sub-menu-item:hover a {
     display: block;
     background: #fbded8;
     color: #373737;
 }
 
-.sub-menu>li:active a {
+li.sub-menu-item:active a {
     background: #f6b5a5;
     color: #373737;
 }
 
-.sub-menu li:first-of-type a {
+li.sub-menu-item:first-of-type a {
     font-weight: 700;
 }
 
-.sub-menu li:first-of-type a::after {
+li.sub-menu-item:first-of-type a::after {
     content: "";
     position: absolute;
     left: 6px;
@@ -1613,32 +1613,32 @@ input[type="checkbox"]:disabled+label::after {
     background: url("../img/next-arrow.png") no-repeat center center;
 }
 
-.pagination li a:hover {
+.pagination a:hover {
     background: #9db1a5;
     border-radius: 50%;
 }
 
-.pagination li .prev:hover,
-.pagination li .prev:active {
+.pagination .prev:hover,
+.pagination .prev:active {
     background-color: none;
     background: url("../img/prev-arrow.png") no-repeat center center;
     border-radius: 0;
 }
 
-.pagination li .next:hover,
-.pagination li .next:active {
+.pagination .next:hover,
+.pagination .next:active {
     background-color: none;
     background: url("../img/next-arrow.png") no-repeat center center;
     border-radius: 0;
 }
 
-.pagination li a:active {
+.pagination a:active {
     background-color: #ffffff;
     color: #000;
     border-radius: 50%;
 }
 
-.pagination li a.active {
+.pagination a.active {
     background-color: #ffffff;
     color: #000;
     border-radius: 50%;
@@ -2024,7 +2024,10 @@ input[type="checkbox"]:disabled+label::after {
 
 .textinput input:focus + label {
   bottom:100%;
+  margin-left:-5px;
   margin-top: -32px;
+  font-size: 11px;
+  color:#8fbdec;
 }
 .textinput input {
     border: 1px solid #d3d3d2;
@@ -2220,7 +2223,7 @@ iframe {
     column-count: 2;
 }
 
-.footer-menu li a {
+.footer-menu a {
     font-size: 13px;
     line-height: 18px;
     display: block;
@@ -2228,7 +2231,7 @@ iframe {
     padding-left: 18px;
 }
 
-.footer-menu li a::before {
+.footer-menu a::before {
     display: none;
     content: "";
     position: absolute;
@@ -2239,7 +2242,7 @@ iframe {
     background: url("../img/heart.svg") no-repeat 0 0;
 }
 
-.footer-menu li a:hover::before {
+.footer-menu a:hover::before {
     display: block;
 }
 
