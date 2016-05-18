@@ -1,34 +1,31 @@
-var popup = document.querySelector(".modal-content");
-var link = document.querySelector(".btn-feedback");
-var close = document.querySelector(".modal-content-close");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
-var form = popup.querySelector("form");
-var storage = localStorage.getItem("login");
+var modalMessage = document.querySelector(".modal-content");
 
-link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-content-show");
-    if (storage) {
-        login.value = storage;
-        password.focus();
-    } else {
-        login.focus();
-    }
+var modalMessageNameField = modalMessage.querySelector("[name=user-name]");
+
+
+var modalMessageOpenBtn = document.querySelector(".btn-feedback");
+
+modalMessageOpenBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  modalMessage.classList.add("modal-content-show");
+
+  modalMessageNameField.focus();
 });
 
-close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("modal-content-show");
-    popup.classList.remove("modal-error");
+
+var modalMessageCloseBtn = modalMessage.querySelector(".modal-content-close");
+
+modalMessageCloseBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  modalMessage.classList.remove("modal-content-show");
 });
 
-form.addEventListener("submit", function(event) {
-    if (!login.value || !password.value) {
-        event.preventDefault();
-        popup.classList.add("modal-error");
-    } else {
-        localStorage.setItem("login", login.value);
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (modalMessage.classList.contains("modal-content-show")) {
+      modalMessage.classList.remove("modal-content-show");
     }
-
+  }
 });
