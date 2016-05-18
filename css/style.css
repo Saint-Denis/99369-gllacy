@@ -6,10 +6,6 @@
     height: 100%;
 }
 
-body > input[type="radio"] {
-    display: none;
-}
-
 .inner-page {
     background: #849d8f url("../img/bg-1.jpg");
     color: #ffffff;
