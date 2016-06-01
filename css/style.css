@@ -233,11 +233,12 @@ a:hover {
 .logo-img {
     display: inline-block;
     vertical-align: top;
-    width: 154px;
-    height: 65px;
+    width: 9.6em;
+    height: 4em;
     padding-top: 7px;
     float: left;
     margin-right: 7px;
+    background-size: contain;
 }
 
 .navigation {
